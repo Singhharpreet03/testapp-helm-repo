@@ -9,12 +9,12 @@ spec:
   replicas: {{ .Values.home.image.replicas }}
   selector:
     matchLabels:
-      name: node-home-pod
+      label-name: node-home-pod
       app: demo-voting-app
   template:
     metadata:
       labels:
-        name: node-home-pod
+        label-name: node-home-pod
         app: demo-voting-app
     spec:
       containers:
