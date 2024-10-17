@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: node-home
-        image: {{ .Values.home.image.name }}  
+        image: {{ .Values.home.image.name }}:{{ .Values.home.image.tag }}  
         ports:
         - containerPort: 3000
