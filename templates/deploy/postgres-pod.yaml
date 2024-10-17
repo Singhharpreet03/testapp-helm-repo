@@ -13,6 +13,7 @@ spec:
   template:
     metadata:
       labels:
+        name: postgres-pod
         app: demo-voting-app
     spec:
       containers:
