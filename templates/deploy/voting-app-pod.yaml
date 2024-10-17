@@ -9,12 +9,12 @@ spec:
   replicas: {{ .Values.voting.image.replicas }}
   selector:
     matchLabels:
-      name: voting-pod
+      label-name: voting-pod
       app: demo-voting-app
   template:
     metadata:
       labels:
-        name: voting-pod
+        label-name: voting-pod
         app: demo-voting-app
     spec:
       containers:
