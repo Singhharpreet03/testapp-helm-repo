@@ -9,6 +9,7 @@ spec:
   replicas: {{ .Values.redis.image.replicas }}
   selector:
     matchLabels:
+      name: redis-pod
       app: demo-voting-app
   template:
     metadata:
