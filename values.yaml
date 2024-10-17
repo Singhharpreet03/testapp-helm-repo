@@ -27,5 +27,5 @@ postgres:
 home:
   image:
     name: harpreet152436/hp-home
-    tag: 1.0.6
+    tag: 1.0.8
     replicas: 1
