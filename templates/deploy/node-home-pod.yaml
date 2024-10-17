@@ -4,6 +4,7 @@ metadata:
   name: node-home-deployment
   namespace: {{ .Values.namespace }}
   labels:
+    name: node-home-pod
     app: demo-voting-app
 spec:
   replicas: {{ .Values.home.image.replicas }}
