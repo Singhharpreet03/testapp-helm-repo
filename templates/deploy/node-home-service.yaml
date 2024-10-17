@@ -13,5 +13,5 @@ spec:
      targetPort: 3000
      nodePort: 30010
   selector:
-    name: ndoe-home-pod
+    name: node-home-pod
     app: demo-voting-app
