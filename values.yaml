@@ -1,4 +1,5 @@
 hostname: hpapp.fairuse.org
+namespace: default
 ingressClassName: traefik
 voting:
   image:
