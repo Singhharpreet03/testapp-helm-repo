@@ -9,6 +9,7 @@ spec:
   replicas: {{ .Values.home.image.replicas }}
   selector:
     matchLabels:
+      name: node-home-pod
       app: demo-voting-app
   template:
     metadata:
