@@ -9,6 +9,7 @@ spec:
   replicas: {{ .Values.postgres.image.replicas }}
   selector:
     matchLabels:
+      name: postgres-pod
       app: demo-voting-app
   template:
     metadata:
