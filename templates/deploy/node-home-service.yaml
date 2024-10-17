@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-home-service
+  namespace: {{ .Values.namespace }}
+  labels:
+    name: node-home-service
+    app: demo-voting-app
+spec:
+  type: NodePort
+  ports:
+   - port: 3000
+     targetPort: 3000
+     nodePort: 30010
+  selector:
+    name: ndoe-home-pod
+    app: demo-voting-app
